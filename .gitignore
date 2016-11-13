@@ -1,33 +1,17 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#include <stdio.h>
+#include <stdlib.h>
 
-# Precompiled Headers
-*.gch
-*.pch
+int main()
+{ 
+int i,sum=0;
+    for(i=2;i<=30;i++)
+    {
+        if(i%2==0)
+        {
+            sum=sum+i;
+        }
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+    }
+    printf("Sum of double numbers between 2 and 30: %d",sum);
+    
+}
